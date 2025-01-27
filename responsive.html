@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+</head>
+<link rel="stylesheet" href="responsive.css">
+<body>
+    <section class="hero-section">
+        <div class="hero-text">
+        <h1 style="font-size: 45px;">Welcome to Paradise Hotel</h1>
+        <p>we provide a room very good price along with great  amenities to make your living experience awesome</p>
+        <button class="book-button"> <a href="#res" style="text-decoration: none;">Book</a></button>
+        </div>
+    </section>
+<section class="about-section">
+    <h1 class="about-heading" style="text-decoration: underline; text-align:center; margin-top:15px;">About us</h1><br>
+    <div class="about-Text"style="color: black;">
+    <p class="left-text">Looking for a vacation to leave behind the hustle of everyday life and indulge in world class hospitality at exotic vocation?Look  o further than the leading and fastest growing hotel chain of Easter india .hotel paradise you unwinding days with us will be the perfect blend of lesure ,comfort,convenience & class.
+    <br><br>
+    We are currently present at puri,Mandarmoni Kolaghat,Tarapith,Darjeeling,taki & Sunderban to make your well deserved vacation a truly unfogetable affair.<button>Know More..</button> </p>
+    <ul  class="right-text" style="margin-left:15%; list-style:square;">
+        <b>Amenities we have:</b>
+        <li>Hight speed internet</li>
+        <li> Complementary Breakfast</li>
+        <li> Swimming Pool</li>
+        <li>Gym</li>
+        <li>Cafeteria</li>
+    </ul>
+    </div>
+</section>
+<H1 style="text-align: center; text-decoration:underline;">Room Type</H1>
+<section class="room-type">
+    
+    <div class="Room-text">
+    <h1>Single Room</h1>
+    <p> A room assigned to one person May have one or more beds .The room size area of single Rooms are generally between 37 m^2 to 45m^2.</p>
+    <h1>Family Room</h1>
+    <p>A parlour or living room connected with to one or more bedroom .( A room with one or more bed rooms and a separate living space.).The room size or area of Suite rooms are generally between 70m^to 100m^2.</p>
+    <h1>Duplex Room</h1>
+    <p>The most expensive room provided bu a hotel.Usually, only one Duplex suite is available on one single hotel property.Similar to the normal suites.,a duplex suite always has one or more bedroom and a living space with a strong emphasis on grand in-room decoration,high -quality  amenities and supplies ,and tailor-made service(e.g.personal butler during the stay).</p>
+    </div>
+    <img src="https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg" alt="Rooms" style="max-width: 100%;">
+</section>
+<H1 style="text-align: center; text-decoration:underline; margin-top:20px;">Fill the form for booking room</H1><br>
+<section class="booking">
+<form action="/action.php
+">
+<label for="name">Your Full name</label><br>
+<input type="text" id="name" placeholder="" required><br>
+<label for="email">Your Email</label><br>
+<input type="email" id="email" placeholder=""required><br>
+<label for="date">Booking Date</label><br>
+<input type="date" id="date"required><br>       
+<label for="Rooms">Select Room Type</label><br>
+<select name="Rooms" id="Rooms"style="  width: 97%;
+height: 40px;
+border-radius: 12px;
+margin-bottom: 25px;"required>
+    <option value="" selected disabled>Rooms...</option>
+    <option value="Single Room">Single Room</option>
+    <option value="Duplex Room">Duplex Room</option>
+    <option value="family room">Family Room</option>
+</select>
+<input type="submit" id="res" onclick="func()" style="margin-top:8px;border:none;background-color:aqua; height:40px; border-radius:24px;">
+</form>
+</section>
+
+</body>
+<script>
+ function func(){
+    window.open("submit.html")
+ }
+</script>
+</html>
